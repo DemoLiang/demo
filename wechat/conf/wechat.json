@@ -1,0 +1,20 @@
+{
+  "base":{
+    "wechat":{
+      "appid":"",
+      "appsecret":""
+    }
+  },
+  "app":{
+    "http":{
+      "logprefix":"http",
+      "httpport":8080,
+      "httpsport":8088,
+      "host":"127.0.0.1",
+      "webconfprofile":"../conf/web.conf",
+      "httpsServerKeyPath":"../cert/server.key",
+      "httpsServerCrtPath":"../cert/server.crt"
+    }
+  }
+
+}

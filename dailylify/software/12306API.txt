@@ -1,0 +1,3 @@
+https://kyfw.12306.cn/otn/leftTicket/queryZ?leftTicketDTO.train_date=2017-02-02&leftTicketDTO.from_station=NNZ&leftTicketDTO.to_station=GBZ&purpose_codes=ADULT
+
+https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=login&rand=sjrand&0.04959311866965299

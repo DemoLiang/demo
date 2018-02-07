@@ -1,0 +1,41 @@
+{
+  "base": {
+    "log": {
+      "level": "debug",
+      "syslog": 1,
+      "ip": "127.0.0.1",
+      "port": 514
+    },
+    "mysql": {
+      "user": "root",
+      "password": "123456",
+      "ip": "127.0.0.1",
+      "port": 3306,
+      "db": "wordpress",
+      "maxIdle": 5,
+      "maxActive": 10
+    },
+    "redis": {
+      "ip": "127.0.0.1",
+      "port": 6379,
+      "user": "root",
+      "password": "cylan",
+      "maxIdle": 5,
+      "maxActive": 10,
+      "ttl": 604800,
+      "retry": 3,
+      "prefix": "v1"
+    }
+  },
+  "app": {
+    "http": {
+      "logPrefix": "http",
+      "Host": "127.0.0.1",
+      "Port": 80,
+      "webConfPath": "./web.conf",
+      "staticFile": "../www",
+      "httpsport": 8081,
+      "DB": true
+    }
+  }
+}
