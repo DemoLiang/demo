@@ -1,2 +1,2 @@
-FROM gcr.io/google_containers/kube-proxy-amd64:v1.7.2
+FROM gcr.io/google_containers/kube-proxy-amd64:v1.9.1
 MAINTAINER demoliang <10086ng@10086ng.com>
