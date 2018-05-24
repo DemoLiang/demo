@@ -12,11 +12,13 @@ const(
 	port= ":50051"
 )
 
-
+var i int =0
 type server struct{
 }
 
 func (s *server)SayHello(ctx context.Context,in *pb.HelloRequest)(*pb.HelloReply,error){
+	i++
+	log.Printf("%v = %v",i,in)
 	return &pb.HelloReply{
 		Message:"hello"+in.Name,
 	},nil
