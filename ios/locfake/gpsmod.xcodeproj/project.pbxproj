@@ -54,6 +54,7 @@
 		01330532200272E00020C84E /* gpsmodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gpsmodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01330536200272E00020C84E /* gpsmodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gpsmodUITests.m; sourceTree = "<group>"; };
 		01330538200272E00020C84E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6734698A20C7BE4500A517A9 /* shangmei.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = shangmei.gpx; path = gpsmod/shangmei.gpx; sourceTree = "<group>"; };
 		C377A9A52011A71000E3C46F /* gpsmod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gpsmod-Bridging-Header.h"; sourceTree = "<group>"; };
 		C377A9A62011A71000E3C46F /* LocationTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTransform.swift; sourceTree = "<group>"; };
 		C377A9BB2011B59100E3C46F /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		01330506200272E00020C84E = {
 			isa = PBXGroup;
 			children = (
+				6734698A20C7BE4500A517A9 /* shangmei.gpx */,
 				01330511200272E00020C84E /* gpsmod */,
 				0133052A200272E00020C84E /* gpsmodTests */,
 				01330535200272E00020C84E /* gpsmodUITests */,
@@ -207,7 +209,7 @@
 		01330507200272E00020C84E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = nickdai;
 				TargetAttributes = {
 					0133050E200272E00020C84E = {
@@ -353,6 +355,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -360,6 +363,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -408,6 +412,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -415,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -439,6 +445,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -448,13 +455,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XNJ8ELRM27;
+				DEVELOPMENT_TEAM = 6VMZ3HNZCS;
 				INFOPLIST_FILE = gpsmod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziyougobike.uma;
+				PRODUCT_BUNDLE_IDENTIFIER = com.10086ng1.uma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "gpsmod/gpsmod-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -467,13 +477,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XNJ8ELRM27;
+				DEVELOPMENT_TEAM = 6VMZ3HNZCS;
 				INFOPLIST_FILE = gpsmod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziyougobike.uma;
+				PRODUCT_BUNDLE_IDENTIFIER = com.10086ng1.uma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "gpsmod/gpsmod-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,7 +561,7 @@
 				0133053A200272E00020C84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0133053B200272E00020C84E /* Build configuration list for PBXNativeTarget "gpsmod" */ = {
 			isa = XCConfigurationList;
@@ -557,7 +570,7 @@
 				0133053D200272E00020C84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0133053E200272E00020C84E /* Build configuration list for PBXNativeTarget "gpsmodTests" */ = {
 			isa = XCConfigurationList;
@@ -566,7 +579,7 @@
 				01330540200272E00020C84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		01330541200272E00020C84E /* Build configuration list for PBXNativeTarget "gpsmodUITests" */ = {
 			isa = XCConfigurationList;
@@ -575,7 +588,7 @@
 				01330543200272E00020C84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

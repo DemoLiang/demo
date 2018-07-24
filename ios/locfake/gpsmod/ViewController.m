@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "gpsmod-Swift.h"
+//#import "gpsmod-Swift.h"
 #import "transform.h"
 @interface ViewController ()
 
